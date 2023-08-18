@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +15,7 @@
     <div class="main-container">
         <header>
             <section class="logo-container">
-                <img class="logo-container__logo" src="images/logo/ohmyfood.png">
+                <img class="logo-container__logo" src="images/logo/ohmyfood.png" alt="logo ohmyfood">
             </section>
             <section class="searchbar">
                 <i class="searchbar__icon fa-solid fa-location-dot"></i>
@@ -32,28 +33,79 @@
                 <div class="list-steps">
                     <section class="steps">
                         <span class="steps__number">1</span>
-                        <i class="fa-solid fa-mobile-screen-button fa-lg" style="color: #7e7e7e;"></i>                        
-                        <h3>Choisissez un restaurant</h3>
+                        <i class="fa-solid fa-mobile-screen-button fa-lg two" style="color: #7e7e7e;"></i>                        
+                        <h3 class="three">Choisissez un restaurant</h3>
                     </section>
                     <section class="steps">
                         <span class="steps__number">2</span>
-                        <i class="fa-solid fa-bars fa-lg" style="color: #7e7e7e;"></i>
-                        <h3>Composez votre menu</h3>
+                        <i class="fa-solid fa-bars fa-lg two" style="color: #7e7e7e;"></i>
+                        <h3 class="three">Composez votre menu</h3>
                     </section>                    
                     <section class="steps">
                         <span class="steps__number">3</span>
-                        <i class="fa-solid fa-store fa-lg" style="color: #9356dc;"></i>
-                        <h3>Dégustez au restaurant</h3>
+                        <i class="fa-solid fa-store fa-lg two" style="color: #9356dc;"></i>
+                        <h3 class="three">Dégustez au restaurant</h3>
                     </section>
                 </div>
             </div>
-            <div class="restaurant">
+            <div class="restaurants">
                 <h2>Restaurants</h2>
+                <section class="restaurants-cards">
+                    <section class="card">
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du goût">
+                        <section class="card-description">
+                            <section class="card-description__titles">
+                                <h3>La palette du goût</h3>
+                                <h4>Ménilmontant</h4>
+                            </section>
+                            <i class="fa-regular fa-heart fa-xl card-description__icon"></i>
+                        </section>
+                    </section>
+                    <section class="card">
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant la note enchantée">
+                        <section class="card-description">
+                            <section class="card-description__titles">
+                                <h3>La note enchantée</h3>
+                                <h4>Charonne</h4>
+                            </section>
+                            <i class="fa-regular fa-heart fa-xl card-description__icon card-description__icon--colored"></i>
+                        </section>
+                    </section>
+                    <section class="card">
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant à la française">
+                        <section class="card-description">
+                            <section class="card-description__titles">
+                                <h3>À la française</h3>
+                                <h4>Cité Rouge</h4>
+                            </section>
+                            <i class="fa-regular fa-heart fa-xl card-description__icon"></i>
+                        </section>
+                    </section>
+                    <section class="card">
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant le délice des sens">
+                        <section class="card-description">
+                            <section class="card-description__titles">
+                                <h3>Le délice des sens</h3>
+                                <h4>Folie-Méricourt</h4>
+                            </section>
+                            <i class="fa-regular fa-heart fa-xl card-description__icon"></i>
+                        </section>
+                    </section>
+                </section>
             </div>
-
         </main>
         <footer>
-
+            <h2>ohmyfood</h2>
+            <section class="footer__links">
+                <i class="fa-solid fa-utensils"></i>
+                <a>&nbsp;&nbsp;&nbsp;Proposer un restaurant</a>
+            </section>
+            <section class="footer__links">
+                <i class="fa-solid fa-handshake-angle"></i>                
+                <a>&nbsp;Devenir partenaire</a>
+            </section>
+            <a>Mentions légales</a>
+            <a>Contact</a>
         </footer>
     </div>
 </body>
