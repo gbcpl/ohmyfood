@@ -27,6 +27,7 @@ header {
     margin-right: auto;
     height: 50px;
     background-color: rgba(234, 234, 234, 1);
+    z-index: -1;
 
     .searchbar__input {
         border: none;
