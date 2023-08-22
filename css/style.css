@@ -23,6 +23,7 @@ header {
   height: 63px;
   align-items: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0225);
+  z-index: 2;
 }
 .logo-container .logo-container__logo {
   margin-left: auto;
@@ -39,7 +40,7 @@ header {
   margin-right: auto;
   height: 50px;
   background-color: rgb(234, 234, 234);
-  z-index: -1;
+  z-index: 1;
 }
 .searchbar .searchbar__input {
   border: none;
@@ -177,9 +178,16 @@ body {
   display: flex;
   margin-left: auto;
   padding-right: 20px;
+  color: #000000;
 }
 .card-description .card-description__icon--colored {
-  background: linear-gradient(#9356DC, #FF79DA);
+  display: flex;
+  margin-left: auto;
+  padding-right: 20px;
+}
+.card-description .card-description__icon--colored:hover {
+  color: red;
+  transition: all 400ms;
 }
 .card-description .card-description__titles {
   padding-left: 13px;
@@ -194,6 +202,40 @@ body {
   margin-bottom: 0px;
   font-size: 17px;
   font-weight: 300;
+}
+
+.heart__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+.heart__icon button {
+  border: none;
+  padding: 0px 0px 0px 0px;
+}
+.heart__icon--empty {
+  position: absolute;
+  right: 30px;
+  color: black;
+}
+.heart__icon--full {
+  position: absolute;
+  right: 30px;
+  opacity: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 400ms;
+}
+.heart__icon:hover .heart__icon--full {
+  opacity: 1;
+  cursor: grab;
+}
+.heart__icon:hover .heart__icon--empty {
+  opacity: 0;
+  cursor: grab;
 }
 
 footer {

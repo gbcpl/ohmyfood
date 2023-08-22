@@ -32,9 +32,16 @@
         display: flex;
         margin-left: auto;
         padding-right: 20px;
+        color: #000000;
 
         &--colored {
-            background: linear-gradient(#9356DC, #FF79DA);    
+            display: flex;
+            margin-left: auto;
+            padding-right: 20px;
+        }
+        &--colored:hover {
+            color: red;
+            transition: all 400ms;
         }
     }
 
@@ -53,4 +60,42 @@
             font-weight: 300;
         }
     }
+}
+
+.heart__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+
+    button {
+        border: none;
+        padding: 0px 0px 0px 0px;
+    }
+    &--empty{
+        position: absolute;
+        right: 30px;
+        color: black;
+    }
+    &--full{
+        position: absolute;
+        right: 30px;
+        opacity: 0;
+        background: linear-gradient(#FF79DA, #9356DC);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all 400ms;
+    }
+
+    &:hover &--full{
+        opacity: 1;
+        cursor: grab;
+    }
+    &:hover &--empty{
+        opacity: 0;
+        cursor: grab;
+    }
+
+
 }
