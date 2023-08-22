@@ -72,6 +72,7 @@
     button {
         border: none;
         padding: 0px 0px 0px 0px;
+        background-color: white;
     }
     &--empty{
         position: absolute;
@@ -85,6 +86,7 @@
         opacity: 0;
         background: linear-gradient(#FF79DA, #9356DC);
         background-clip: text;
+        background-color: white;
         -webkit-background-clip: text;
         color: transparent;
         transition: all 400ms;

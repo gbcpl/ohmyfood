@@ -214,11 +214,13 @@ body {
 .heart__icon button {
   border: none;
   padding: 0px 0px 0px 0px;
+  background-color: white;
 }
 .heart__icon--empty {
   position: absolute;
   right: 30px;
   color: black;
+  background-color: white;
 }
 .heart__icon--full {
   position: absolute;
@@ -226,6 +228,7 @@ body {
   opacity: 0;
   background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
+  background-color: white;
   -webkit-background-clip: text;
   color: transparent;
   transition: all 400ms;
