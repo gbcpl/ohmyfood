@@ -209,6 +209,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 16px;
+  background-color: white;
 }
 .heart__icon button {
   border: none;
