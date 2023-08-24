@@ -1,0 +1,28 @@
+.heart__icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  &--empty{
+      position: absolute;
+      color: black;
+      right: 30px;
+  }
+  &--full{
+      position: absolute;
+      right: 30px;
+      opacity: 0;
+      background: linear-gradient(#FF79DA, #9356DC);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: all 800ms;
+  }
+  &:hover &--full{
+      opacity: 1;
+  }
+  &:hover &--empty{
+      opacity: 0;
+  }
+}
+  

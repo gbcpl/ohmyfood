@@ -1,7 +1,11 @@
+@import "../utils/mixins";
+
 .title {
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 100px;
     h1 {
         font-size: 24px;
         font-weight: 700;
@@ -10,12 +14,18 @@
         font-size: 18px;
         font-weight: 300;
         color: #353535;
+        margin-bottom: 30px;
     }
 }
 
 .fonctionnement {
     padding-left: 20px;
     padding-right: 20px;
+    background-color: #FFFFFF;
+    margin-bottom: 100px;
+    @include lg {
+        padding: 50px 180px 50px 180px;
+    }
 }
 
 .list-steps {
@@ -23,6 +33,11 @@
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    @include lg {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;    
+    }
 }
 
 .steps {
@@ -31,12 +46,16 @@
     gap: 30px;
     border-radius: 20px;
     background-color: rgba(246, 246, 246, 1);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.16);
     margin-bottom: 20px;
     display: grid;
     grid-template-columns: 30px 2fr;
     grid-gap: 10px;
     grid-auto-rows: 72px;
+    @include lg {
+        display: flex;
+        flex-direction: row;
+    }
     
     .steps__number {
         position: absolute;
@@ -51,6 +70,10 @@
         color: white;
         font-size: 14px;
         font-weight: 500;
+        @include lg {
+            position: relative;
+            left: -50px;
+        }
     }
     .two {
         grid-column: 1 / 3;
