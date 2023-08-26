@@ -6,3 +6,8 @@ body {
 ::placeholder {
     color: #353535;
 }
+
+.main-container {
+    position: relative;
+    z-index: 1;
+} 

@@ -3,11 +3,13 @@
   justify-content: center;
   align-items: center;
   margin-right: 16px;
+
   &--empty{
       position: absolute;
       color: black;
       right: 30px;
   }
+
   &--full{
       position: absolute;
       right: 30px;
@@ -16,7 +18,7 @@
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      transition: all 800ms;
+      transition-duration: 800ms;
   }
   &:hover &--full{
       opacity: 1;
@@ -24,5 +26,12 @@
   &:hover &--empty{
       opacity: 0;
   }
+
+  &--empty{
+    position: absolute;
+    color: black;
+    right: 30px;
+}
+  
 }
   
