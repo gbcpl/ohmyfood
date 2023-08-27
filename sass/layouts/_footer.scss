@@ -28,6 +28,8 @@ footer {
         font-weight: 500;
         font-size: 16px;
         padding-bottom: 5px;
+        text-decoration: none;
+        color: white;
         @include lg {
             align-self: end;
         }
