@@ -1,6 +1,7 @@
 .blur {
     display: block;
     position: fixed;
+    left: 0;
     width: 100%;
     height: 100%;
     animation: blur 4s;
@@ -23,8 +24,8 @@
 .lds-facebook {
     display: inline-block;
     position: sticky;
-    left: 47.5%;
-    top: 44%;
+    left: 50%;
+    top: 50%;
     z-index: 400;
   }
 

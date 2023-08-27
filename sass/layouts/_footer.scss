@@ -1,3 +1,5 @@
+@import "../utils/mixins";
+
 footer {
     background-color: #353535;
     padding-left: 20px;
@@ -5,23 +7,38 @@ footer {
     flex-direction: column;
     color: white;
     padding-bottom: 20px;
-
+    @include lg {
+        flex-direction: row-reverse;
+        gap: 30px;
+        height: 114px;
+        padding-right: 30px;
+    }
     h2 {
         font-style: italic;
         font-weight: 400;
         font-size: 18px;
         line-height: 26.24px;
+        @include lg {
+            align-self: end;
+            margin: 0;
+        }
     }
 
     a {
         font-weight: 500;
         font-size: 16px;
         padding-bottom: 5px;
+        @include lg {
+            align-self: end;
+        }
     }
 
     .footer__links {
         display: flex;
         flex-direction: row;
+        @include lg {
+            align-self: end;
+        }
     }
 }
 

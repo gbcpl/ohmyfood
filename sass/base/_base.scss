@@ -1,6 +1,13 @@
+@import "../utils/mixins";
+
 body {
     margin: 0px;
     background-color: #F6F6F6;
+    @include lg {
+        max-width: 1480px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 ::placeholder {
