@@ -94,6 +94,9 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
+    @include lg {
+        padding: 50px 180px 50px 180px;
+    }
 }
 
 .restaurants-cards {

@@ -194,6 +194,11 @@ body {
   padding-right: 20px;
   padding-bottom: 40px;
 }
+@media (min-width: 1024px) {
+  .restaurants {
+    padding: 50px 180px 50px 180px;
+  }
+}
 
 .restaurants-cards {
   display: flex;
