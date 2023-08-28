@@ -2,6 +2,17 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
+    
+    .fa-arrow-left {
+        position: absolute;
+        left: 20px;
+        top: 32px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .logo-container {

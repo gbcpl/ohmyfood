@@ -10,6 +10,11 @@
       right: 30px;
   }
 
+  &--restoempty {
+    position: absolute;
+    color: black;
+  }
+
   &--full{
       position: absolute;
       right: 30px;
@@ -20,6 +25,17 @@
       color: transparent;
       transition-duration: 800ms;
   }
+
+  &--restofull {
+    position: absolute;
+    opacity: 0;
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition-duration: 800ms;
+}
+
   &:hover &--full{
       opacity: 1;
   }
@@ -27,11 +43,19 @@
       opacity: 0;
   }
 
-  &--empty{
+  &:hover &--restofull{
+    opacity: 1;
+  }
+  &:hover &--restoempty{
+    opacity: 0;
+  }
+
+
+  /*&--empty{
     position: absolute;
     color: black;
     right: 30px;
-}
+}*/
   
 }
   
