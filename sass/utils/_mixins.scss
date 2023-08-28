@@ -1,4 +1,10 @@
 @mixin lg {
+    @media (min-width: 1360px) {
+        @content;
+    }
+ }
+
+ @mixin tab {
     @media (min-width: 1024px) {
         @content;
     }

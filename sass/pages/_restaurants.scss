@@ -26,7 +26,65 @@
     }
 }
 
-
 .menu {
     padding-left: 20px;
+}
+
+.entrees {
+    animation: entrees-appear 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    @keyframes entrees-appear {
+
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+        
+    }
+}
+
+.plats {
+    animation: plats-appear 2s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    @keyframes plats-appear {
+
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+        
+    }
+}
+
+.desserts {
+    animation: desserts-appear 2s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    @keyframes desserts-appear {
+
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+        
+    }
 }

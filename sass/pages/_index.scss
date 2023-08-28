@@ -37,10 +37,15 @@
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+
     @include lg {
+        width: 100%;
         flex-direction: row;
         justify-content: space-between;
-        gap: 20px;    
+        gap: 20px;
+        margin-right: none;
+        margin-left: none;
+
     }
 }
 
@@ -56,6 +61,7 @@
     grid-template-columns: 30px 2fr;
     grid-gap: 10px;
     grid-auto-rows: 72px;
+
     @include lg {
         display: flex;
         flex-direction: row;
@@ -75,6 +81,7 @@
         color: white;
         font-size: 14px;
         font-weight: 500;
+
         @include lg {
             position: relative;
             left: -50px;
@@ -102,6 +109,14 @@
 .restaurants-cards {
     display: flex;
     flex-direction: column;
+
+    @include tab {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: space-between;     
+    }
+    
     @include lg {
         flex-direction: row;
         flex-wrap: wrap;
