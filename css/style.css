@@ -509,6 +509,14 @@ footer .footer__links {
   top: -80px;
   width: 100%;
 }
+@media (min-width: 1360px) {
+  .background {
+    width: 1055px;
+    margin-right: auto;
+    margin-left: auto;
+    top: -40px;
+  }
+}
 
 .title-resto {
   display: flex;
@@ -537,6 +545,7 @@ footer .footer__links {
   border-bottom: solid 3px rgb(153, 226, 208);
   width: 40px;
   margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .entrees {
@@ -586,13 +595,53 @@ footer .footer__links {
   }
 }
 
+.plat_container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#plat_animation {
+  position: absolute;
+  right: -59px;
+  height: 95px;
+  transition: 1s;
+  background-color: rgb(153, 226, 208);
+  width: 59px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plat_container:hover #plat_animation {
+  transition: 1s;
+  right: 0;
+}
+
+.plat_container:hover #price {
+  transition: 1s;
+  right: 59px;
+}
+
+.plat_container:hover #plat_animation ~ .plat .plat_title,
+.plat_container:hover #plat_animation ~ .plat .plat_description {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .plat {
   display: flex;
   flex-direction: column;
   background-color: white;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
-  border-radius: 15px;
 }
 .plat .plat_title {
   font-size: 18px;
@@ -600,19 +649,29 @@ footer .footer__links {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat .plat_description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat .plat_description p {
   margin: 0px;
   padding: 0px 15px 15px 15px;
   font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.plat .plat_description .price {
+
+#price {
   font-weight: 700;
+  transition: 1s;
+  position: absolute;
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

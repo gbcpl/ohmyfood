@@ -12,6 +12,13 @@
     border-top-right-radius: 50px;
     top: -80px;
     width: 100%;
+
+    @include lg {
+        width: 1055px;
+        margin-right: auto;
+        margin-left: auto;
+        top: -40px;    
+    }
 }
 
 .title-resto {
@@ -43,6 +50,7 @@
         border-bottom: solid 3px rgba(153, 226, 208, 1);
         width: 40px;
         margin-top: 5px;
+        margin-bottom: 10px;
     }
 }
 
@@ -105,13 +113,54 @@
     }
 }
 
+.plat_container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#plat_animation {
+    position: absolute;
+    right: -59px;
+    height: 95px;
+    transition: 1s;
+    background-color: rgba(153, 226, 208, 1);
+    width: 59px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+    
+.plat_container:hover #plat_animation {
+    transition: 1s;
+    right: 0;    
+}
+
+.plat_container:hover #price {
+    transition: 1s;
+    right: 59px;    
+}
+
+.plat_container:hover #plat_animation ~ .plat .plat_title,
+.plat_container:hover #plat_animation ~ .plat .plat_description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
 .plat {
     display: flex;
     flex-direction: column;
     background-color: white;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
-    border-radius: 15px;
 
     .plat_title {
         font-size: 18px;
@@ -119,22 +168,31 @@
         margin-top: 0px;
         margin-bottom: 0px;
         padding: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .plat_description {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         p {
             margin: 0px;
             padding: 0px 15px 15px 15px;
             font-size: 15px;
-        }
-
-        .price {
-            font-weight: 700;
+            overflow: hidden;
+            text-overflow: ellipsis;
+    
         }
     }
 }
 
+#price {
+    font-weight: 700;
+    transition: 1s;
+    position: absolute;
+    right: 0;
+}
