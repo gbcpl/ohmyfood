@@ -8,7 +8,8 @@ footer {
     color: white;
     padding-bottom: 20px;
     @include lg {
-        flex-direction: row-reverse;
+        flex-direction: row;
+        justify-content: end;
         gap: 30px;
         height: 114px;
         padding-right: 30px;
@@ -42,5 +43,12 @@ footer {
             align-self: end;
         }
     }
+
+    @include lg {
+        .order5 {
+            order: 5;
+        }
+    }
+
 }
 

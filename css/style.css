@@ -339,7 +339,8 @@ footer {
 }
 @media (min-width: 1360px) {
   footer {
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: end;
     gap: 30px;
     height: 114px;
     padding-right: 30px;
@@ -376,6 +377,11 @@ footer .footer__links {
 @media (min-width: 1360px) {
   footer .footer__links {
     align-self: end;
+  }
+}
+@media (min-width: 1360px) {
+  footer .order5 {
+    order: 5;
   }
 }
 
@@ -527,7 +533,7 @@ footer .footer__links {
   margin-bottom: 30px;
 }
 .title-resto h1 {
-  padding-right: 70px;
+  padding-right: 40px;
   font-size: 28px;
   font-weight: 400;
 }
@@ -536,6 +542,12 @@ footer .footer__links {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  .menu {
+    padding-left: 210px;
+    padding-right: 210px;
+  }
 }
 .menu .menu_title {
   text-transform: uppercase;
@@ -608,7 +620,7 @@ footer .footer__links {
   background-color: white;
 }
 
-#plat_animation {
+.plat_animation {
   position: absolute;
   right: -59px;
   height: 95px;
@@ -622,21 +634,21 @@ footer .footer__links {
   justify-content: center;
 }
 
-.plat_container:hover #plat_animation {
+.plat_container:hover .plat_animation {
   transition: 1s;
   right: 0;
 }
 
-.plat_container:hover #price {
+.plat_container:hover .price {
   transition: 1s;
   right: 59px;
 }
 
-.plat_container:hover #plat_animation ~ .plat .plat_title,
-.plat_container:hover #plat_animation ~ .plat .plat_description {
-  text-overflow: ellipsis;
+.plat_container:hover .plat_title,
+.plat_container:hover .plat_description p {
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .plat {
@@ -652,15 +664,10 @@ footer .footer__links {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .plat .plat_description {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .plat .plat_description p {
   margin: 0px;
@@ -670,7 +677,7 @@ footer .footer__links {
   text-overflow: ellipsis;
 }
 
-#price {
+.price {
   font-weight: 700;
   transition: 1s;
   position: absolute;
