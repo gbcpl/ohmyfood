@@ -138,6 +138,7 @@ a {
 }
 
 .fonctionnement {
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #FFFFFF;
@@ -604,6 +605,7 @@ footer .footer__links {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   margin-bottom: 10px;
+  background-color: white;
 }
 
 #plat_animation {
@@ -642,6 +644,7 @@ footer .footer__links {
   flex-direction: column;
   background-color: white;
   margin-bottom: 10px;
+  width: 100%;
 }
 .plat .plat_title {
   font-size: 18px;
