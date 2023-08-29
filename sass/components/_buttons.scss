@@ -16,4 +16,13 @@
         opacity: 0.8;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     }
+
+    &--commander {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 186px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }

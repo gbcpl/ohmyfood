@@ -17,6 +17,14 @@
   opacity: 0.8;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
+.btn--commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 186px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 header {
   width: 100%;
@@ -511,10 +519,24 @@ footer .footer__links {
 }
 .title-resto h1 {
   padding-right: 70px;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .menu {
   padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+.menu .menu_title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+}
+.menu .border-bottom {
+  border-bottom: solid 3px rgb(153, 226, 208);
+  width: 40px;
+  margin-top: 5px;
 }
 
 .entrees {
@@ -562,6 +584,35 @@ footer .footer__links {
   100% {
     opacity: 1;
   }
+}
+
+.plat {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.plat .plat_title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 15px;
+}
+.plat .plat_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.plat .plat_description p {
+  margin: 0px;
+  padding: 0px 15px 15px 15px;
+  font-size: 15px;
+}
+.plat .plat_description .price {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
