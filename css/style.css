@@ -622,10 +622,67 @@ footer .footer__links {
   background-color: white;
 }
 
+.plat {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.plat .plat_title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 15px 15px 5px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat .plat_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.plat .plat_description .description {
+  margin: 0px;
+  padding-left: 15px;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plat .plat_description .price {
+  font-weight: 700;
+  transition: 1s;
+  margin: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* 
+.plat_animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(153, 226, 208, 1);
+    transition: 1s;
+    height: 85px;
+    width: 0px;
+    z-index: 400;
+}
+
+.plat_container:hover .plat_animation {
+    transition: 1s;
+    width: 59px;    
+}
+*/
 .plat_animation {
   position: absolute;
   right: -59px;
-  height: 85px;
+  height: 71px;
   transition: 1s;
   background-color: rgb(153, 226, 208);
   width: 59px;
@@ -651,45 +708,7 @@ footer .footer__links {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.plat {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  margin-bottom: 10px;
-  width: 100%;
-}
-.plat .plat_title {
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 15px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.plat .plat_description {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.plat .plat_description .description {
-  margin: 0px;
-  padding-left: 15px;
-  font-size: 15px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.plat .plat_description .price {
-  font-weight: 700;
-  transition: 1s;
-  background: white;
-  margin: 0px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: calc(100% - 120px);
 }
 
 /*# sourceMappingURL=style.css.map */
