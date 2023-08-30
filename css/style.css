@@ -531,6 +531,8 @@ footer .footer__links {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .title-resto h1 {
   padding-right: 40px;
@@ -623,7 +625,7 @@ footer .footer__links {
 .plat_animation {
   position: absolute;
   right: -59px;
-  height: 95px;
+  height: 85px;
   transition: 1s;
   background-color: rgb(153, 226, 208);
   width: 59px;
@@ -641,11 +643,11 @@ footer .footer__links {
 
 .plat_container:hover .price {
   transition: 1s;
-  right: 59px;
+  transform: translate(-59px);
 }
 
 .plat_container:hover .plat_title,
-.plat_container:hover .plat_description p {
+.plat_container:hover .description {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -664,24 +666,30 @@ footer .footer__links {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat .plat_description {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-.plat .plat_description p {
+.plat .plat_description .description {
   margin: 0px;
-  padding: 0px 15px 15px 15px;
+  padding-left: 15px;
   font-size: 15px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-.price {
+.plat .plat_description .price {
   font-weight: 700;
   transition: 1s;
-  position: absolute;
-  right: 0;
+  background: white;
+  margin: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
