@@ -163,8 +163,8 @@ a {
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-    margin-right: none;
-    margin-left: none;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -493,7 +493,7 @@ footer .footer__links {
 
 .lds-facebook div:nth-child(3) {
   left: 24px;
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 
 @keyframes lds-facebook {
