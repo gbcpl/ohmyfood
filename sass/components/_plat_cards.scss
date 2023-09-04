@@ -1,0 +1,80 @@
+
+.plat {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 100%;
+
+    .plat_title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 15px 15px 5px 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;    
+    }
+    
+    .plat_description {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .description {
+            margin: 0px;
+            padding-left: 15px;
+            font-size: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .price {
+            font-weight: 700;
+            transition: 1s;
+            margin: 0px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
+ .plat_animation {
+    position: absolute;
+    right: -59px;
+    height: 71px;
+    transition: 1s;
+    background-color: rgba(153, 226, 208, 1);
+    width: 59px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+    
+.plat_container:hover .plat_animation {
+    transition: 1s;
+    right: 0;    
+}
+
+.plat_container:hover .price {
+    transition: 1s;
+    transform: translate(-59px);    
+}
+
+.plat_container:hover .description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 120px);
+}
+
+.plat_container:hover .plat_title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 80px);
+}

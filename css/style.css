@@ -269,7 +269,7 @@ a {
 }
 .card .card__nouveau {
   position: absolute;
-  right: 40px;
+  right: 30px;
   padding: 7px 9px 7px 9px;
   background-color: rgb(153, 226, 208);
   color: rgb(0, 135, 102);
@@ -327,6 +327,10 @@ a {
   margin-bottom: 0px;
   font-size: 17px;
   font-weight: 300;
+}
+.card-description .card-description__titles a {
+  text-decoration: none;
+  color: black;
 }
 
 footer {
@@ -581,7 +585,7 @@ footer .footer__links {
 .plats {
   animation: plats-appear 2s;
   animation-iteration-count: 1;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -597,7 +601,7 @@ footer .footer__links {
 .desserts {
   animation: desserts-appear 2s;
   animation-iteration-count: 1;
-  animation-delay: 4s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -660,25 +664,6 @@ footer .footer__links {
   padding-right: 15px;
 }
 
-/* 
-.plat_animation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: rgba(153, 226, 208, 1);
-    transition: 1s;
-    height: 85px;
-    width: 0px;
-    z-index: 400;
-}
-
-.plat_container:hover .plat_animation {
-    transition: 1s;
-    width: 59px;    
-}
-*/
 .plat_animation {
   position: absolute;
   right: -59px;
@@ -703,12 +688,18 @@ footer .footer__links {
   transform: translate(-59px);
 }
 
-.plat_container:hover .plat_title,
 .plat_container:hover .description {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: calc(100% - 120px);
+}
+
+.plat_container:hover .plat_title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 80px);
 }
 
 /*# sourceMappingURL=style.css.map */
