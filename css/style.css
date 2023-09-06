@@ -213,7 +213,7 @@ a {
   grid-row: 1;
 }
 .steps .three {
-  grid-column: 2/4;
+  grid-column: 2/3;
   grid-row: 1;
 }
 
@@ -395,11 +395,6 @@ footer .footer__links {
   align-items: center;
   margin-right: 16px;
   cursor: pointer;
-  /*&--empty{
-      position: absolute;
-      color: black;
-      right: 30px;
-  }*/
 }
 .heart__icon--empty {
   position: absolute;
@@ -477,7 +472,7 @@ footer .footer__links {
   left: 8px;
   width: 16px;
   background: #000000;
-  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1);
   animation-iteration-count: 3;
 }
 
@@ -567,6 +562,20 @@ footer .footer__links {
   margin-bottom: 10px;
 }
 
+.plat_container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+/* Following animations make each block of code appear  
+one after another with a 1.5 seconds delay */
 .entrees {
   animation: entrees-appear 2s;
   animation-iteration-count: 1;
@@ -612,18 +621,6 @@ footer .footer__links {
   100% {
     opacity: 1;
   }
-}
-
-.plat_container {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  margin-bottom: 10px;
-  background-color: white;
 }
 
 .plat {
