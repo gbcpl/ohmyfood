@@ -1,3 +1,5 @@
+// These 2 mixins represents the breakpoints for the tablet and desktop versions, the default one being the mobile version.
+
 @mixin lg {
     @media (min-width: 1360px) {
         @content;

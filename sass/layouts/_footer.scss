@@ -44,6 +44,8 @@ footer {
         }
     }
 
+// On desktop, the logo needs to be the last element thanks to the order property
+
     @include lg {
         .order5 {
             order: 5;

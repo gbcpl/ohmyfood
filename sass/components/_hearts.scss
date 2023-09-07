@@ -1,3 +1,10 @@
+// Animation for the hearts icon that can be found in both index.html and the restaurant pages.
+// An empty heart and a full heart are placed on the same absolute position. 
+// The empty heart is shown by default, while the full one has an opacity of 0.
+// When the user hovers them, the empty one disappears (opacity: 0) and the empty one appears.
+// There are two versions of the heart icons: "empty" and "full" for the front page, and "restoempty", "restofull" for the restaurant pages. 
+
+
 .heart__icon{
   display: flex;
   justify-content: center;

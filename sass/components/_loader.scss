@@ -1,4 +1,4 @@
-// Adds a filter that makes the page darker while the animated loader is active 
+// Adds a filter that makes the page darker while the animated loader is active.
 
 .blur {
     display: block;
@@ -23,7 +23,7 @@
     
 }
 
-// Places the loader in the center of the screen
+// Places the loader in the center of the screen.
 
 .lds-facebook {
     position: fixed;
@@ -32,7 +32,7 @@
     z-index: 400;
   }
 
-// The loader animation is working 3 times then disappears
+// The loader animation is working 3 times then disappears.
 
 .lds-facebook div {
     display: inline-block;

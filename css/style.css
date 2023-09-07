@@ -299,21 +299,6 @@ a {
   background-color: white;
   padding-bottom: 15px;
 }
-.card-description .card-description__icon {
-  display: flex;
-  margin-left: auto;
-  padding-right: 20px;
-  color: #000000;
-}
-.card-description .card-description__icon--colored {
-  display: flex;
-  margin-left: auto;
-  padding-right: 20px;
-}
-.card-description .card-description__icon--colored:hover {
-  color: red;
-  transition: all 400ms;
-}
 .card-description .card-description__titles {
   padding-left: 13px;
 }
@@ -574,8 +559,6 @@ footer .footer__links {
   background-color: white;
 }
 
-/* Following animations make each block of code appear  
-one after another with a 1.5 seconds delay */
 .entrees {
   animation: entrees-appear 2s;
   animation-iteration-count: 1;

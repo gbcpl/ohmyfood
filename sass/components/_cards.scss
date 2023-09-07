@@ -1,3 +1,6 @@
+// Stylization of cards in the index.html file. 
+// Position of .card is relative in order to place the "Nouveau" paragraph to the right of the card.
+
 .card {
     position: relative;
     display: flex;
@@ -36,7 +39,9 @@
     }
 }
 
-
+// Represents the description of each restaurants in the index.html file.
+// Display is put on flex row in order to place the description on the left and the hearts on the right.
+// CSS for Hearts can be found in its own file named _hearts.scss. 
 
 .card-description {
     display: flex;
@@ -46,23 +51,6 @@
     border-bottom-right-radius: 15px;
     background-color: white;
     padding-bottom: 15px;
-    
-    .card-description__icon {
-        display: flex;
-        margin-left: auto;
-        padding-right: 20px;
-        color: #000000;
-
-        &--colored {
-            display: flex;
-            margin-left: auto;
-            padding-right: 20px;
-        }
-        &--colored:hover {
-            color: red;
-            transition: all 400ms;
-        }
-    }
 
     .card-description__titles {
         padding-left: 13px;

@@ -50,6 +50,8 @@
     }
 }
 
+// This time, we use the "display: grid" property because the icons are not of the same size. 
+
 .steps {
     align-items: center;
     padding-left: 40px;
@@ -69,6 +71,8 @@
         padding-right: 20px;
     }
     
+    // We want the numbers placed on the left border of the steps blocks, so an absolute position is needed.
+
     .steps__number {
         position: absolute;
         left: 20px;
@@ -106,6 +110,9 @@
         padding: 50px 180px 50px 180px;
     }
 }
+
+// On mobile, we want 1 restaurant card per row, so "flex-direction: column", is used.
+// If on tablet or desktop, we want 2 cards per row, which is made possible thanks to the flex-wrap property.
 
 .restaurants-cards {
     display: flex;

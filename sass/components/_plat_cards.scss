@@ -1,3 +1,4 @@
+// The "plat" class is dedicated for all the dishes displayed on the restaurant pages.
 
 .plat {
     display: flex;
@@ -41,6 +42,9 @@
     }
 }
 
+// When the user hovers a dish on desktop, or click on it on mobile, an animated slide appears with a check icon inside of it.
+// The slide position is offscreen by default thanks to the "right: -59px" property.
+
  .plat_animation {
     position: absolute;
     right: -59px;
@@ -64,6 +68,9 @@
     transition: 1s;
     transform: translate(-59px);    
 }
+
+// If the text of the description is too long, we shorten it thanks to the combination of 3 properties: white-space, overflow, and ellipsis.
+// We need to calculate the width of the text in order to activate the text-overflow ("...") property. 
 
 .plat_container:hover .description {
     white-space: nowrap;
